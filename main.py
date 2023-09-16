@@ -19,6 +19,11 @@ def profile(username):
     # Extract the 'username' varibale from the URL and include it in the HTML response
     return '<h2>Hey there %s </h2>' %username
 
+# Define a variable/dynamic route with an integer paramater
+@app.route('/post/<int:post_id>')
+def post(post_id):
+ pass
+
 # Check if the script is being run as the main program
 if __name__ == '__main__':
     # Start flask application in debug mode
