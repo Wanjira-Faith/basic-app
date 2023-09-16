@@ -26,7 +26,7 @@ def post(post_id):
     return '<h2>Post ID is %s </h2>' %post_id
 
 @app.route('/user/<int:age>')
-def show_post(age):
+def show_age(age):
     return f'<h2>My Age: {age}</h2>'
 
 # Check if the script is being run as the main program
