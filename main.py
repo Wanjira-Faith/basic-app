@@ -17,7 +17,7 @@ def tuna():
 @app.route('/profile/<username>')
 def profile(username):
     # Extract the 'username' varibale from the URL and include it in the HTML response
-    return '<h2>Hey there %s </h2>' %username
+    return f'<h2>Hey there {username}</h2>'
 
 # Define a variable/dynamic route with an integer paramater
 @app.route('/post/<int:post_id>')
