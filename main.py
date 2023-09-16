@@ -25,6 +25,10 @@ def post(post_id):
     # Return html response with the post ID extracted from the URL 
     return '<h2>Post ID is %s </h2>' %post_id
 
+@app.route('/user/<int:age>')
+def show_post(age):
+    return f'<h2>My Age: {age}</h2>'
+
 # Check if the script is being run as the main program
 if __name__ == '__main__':
     # Start flask application in debug mode
