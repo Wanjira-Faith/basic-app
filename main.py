@@ -25,6 +25,7 @@ def post(post_id):
     # Return html response with the post ID extracted from the URL 
     return '<h2>Post ID is %s </h2>' %post_id
 
+# Define a dynamic route with a placeholder variable 'age'
 @app.route('/user/<int:age>')
 def show_age(age):
     return f'<h2>My Age: {age}</h2>'
