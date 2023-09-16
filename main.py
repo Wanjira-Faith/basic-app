@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Define a route for the root URL '/'
 @app.route('/')
 def index():
-    return 'This is the homepage'
+    return '<h2>This is the homepage</h2>'
 
 # Define a route for '/tuna'
 @app.route('/tuna')
