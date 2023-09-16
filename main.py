@@ -7,5 +7,9 @@ app = Flask(__name__)
 def index():
     return 'This is the homepage'
 
+@app.route('/tuna')
+def tuna():
+    return '<h2>Tuna is good </h2>'
+
 if __name__ == '__main__':
     app.run(debug=True)
