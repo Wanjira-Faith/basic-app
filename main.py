@@ -22,7 +22,8 @@ def profile(username):
 # Define a variable/dynamic route with an integer paramater
 @app.route('/post/<int:post_id>')
 def post(post_id):
- pass
+    # Return html response with the post ID extracted from the URL 
+    return '<h2>Post ID is %s </h2>' %post_id
 
 # Check if the script is being run as the main program
 if __name__ == '__main__':
