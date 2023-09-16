@@ -23,7 +23,7 @@ def profile(username):
 @app.route('/post/<int:post_id>')
 def post(post_id):
     # Return html response with the post ID extracted from the URL 
-    return '<h2>Post ID is %s </h2>' %post_id
+    return f'<h2>Post ID is {post_id}</h2>' 
 
 # Define a dynamic route with a placeholder variable 'age'
 @app.route('/user/<int:age>')
